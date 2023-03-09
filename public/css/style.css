@@ -113,6 +113,7 @@ ul {
   width: 100%;
   margin-top: 8rem;
   height: 230px;
+  z-index: -1;
 }
 
 .neighbour::before {
@@ -320,7 +321,8 @@ input::placeholder {
     width: 100%;
   }
   body {
-    overflow: hidden;
+    overflow-x: hidden;
+    height: 1000px;
   }
   .nav_items {
     position: absolute;

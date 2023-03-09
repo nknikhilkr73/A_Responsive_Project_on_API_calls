@@ -229,6 +229,9 @@ ul {
 }
 
 @media (max-width: 730px) {
+  /* body {
+    height: 100%;
+  } */
   .burger {
     display: block;
     position: relative;
