@@ -7,8 +7,6 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
-  overflow: hidden;
-  height: 1000px;
 }
 a {
   text-decoration: none;
@@ -234,16 +232,6 @@ ul {
   /* body {
     height: 100%;
   } */
-  body {
-    overflow-x: hidden;
-    height: 2000px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    background-repeat: no-repeat;
-    flex-direction: column;
-    background-size: cover;
-  }
   .burger {
     display: block;
     position: relative;
