@@ -1,0 +1,498 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #f7f7f7;
+}
+
+body {
+  background-image: linear-gradient(135deg, #d4e7a8 10%, #c68452 100%);
+  font-family: system-ui;
+
+  color: #555;
+  background-color: #f7f7f7;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  background-size: auto;
+}
+.nav_items li:hover {
+  border-bottom: 2px solid rgb(0, 225, 255);
+}
+.weather {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 730.1px) {
+  .burger {
+    display: none;
+  }
+  .input_field {
+    position: relative;
+    top: 30px;
+  }
+  .weather {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 260px;
+    height: 200px;
+    background-color: #000000;
+    border-radius: 10px;
+    color: #ffffff;
+  }
+  .degree {
+    font-size: 3rem;
+  }
+  .location {
+    position: absolute;
+    top: 85px;
+    right: 4px;
+    height: 60px;
+    width: 240px;
+  }
+
+  .location h2 {
+    font-size: 2.3rem;
+    display: inline-block;
+  }
+  .location h3 {
+    font-size: 1.7rem;
+    display: inline-block;
+    margin: 0 0.5rem;
+  }
+  .weather_temp {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+  }
+  .weather_temp h1 {
+    display: inline-block;
+    font-size: 5rem;
+    margin-right: 1rem;
+  }
+  .weather_temp h3 {
+    font-size: 3rem;
+    display: inline-block;
+  }
+  .temp {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 8px;
+    padding: 0 3rem;
+    text-align: center;
+  }
+  .temp h1 {
+    font-size: 2rem;
+    display: inline-block;
+  }
+  .temp h3 {
+    font-size: 2rem;
+    display: inline-block;
+  }
+  .temp h2 {
+    font-size: 1.5rem;
+  }
+  .live_weather {
+    width: 100%;
+  }
+  .weather_icon {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    left: 10px;
+  }
+  .weather_icon img {
+    width: 130px;
+  }
+  .weather_icon h3 {
+    font-size: 2rem;
+  }
+  .second_child {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 25px;
+  }
+  .astronomy {
+    width: 350px;
+    position: relative;
+  }
+  .live_astronomy {
+    width: 100%;
+  }
+  .live_astronomy h1 {
+    font-size: 2.3rem;
+    color: #000000;
+    display: inline-block;
+  }
+  .live_astronomy h3 {
+    font-size: 2rem;
+    display: inline-block;
+  }
+  .live_astronomy h2 {
+    font-size: 2rem;
+    color: #f7f7f7;
+    display: inline-block;
+  }
+  .live_astronomy div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    align-items: center;
+  }
+  .forecast {
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding: 0 2rem;
+  }
+
+  .forecast {
+    color: #f7f7f7;
+    text-decoration: underline;
+  }
+  .forecast_details {
+    width: 7rem;
+  }
+
+  .forecast_details:hover {
+    transform: translateY(2px);
+    cursor: pointer;
+  }
+  .forecast_details:active {
+    transform: translateY(2px);
+  }
+  .nav_items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 60%;
+    max-width: 60%;
+    padding: 0 5rem 0 3rem;
+    color: #ffffff;
+  }
+  .nav_items li {
+    list-style: none;
+    font-size: 1.6rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .nav_items li:hover {
+    cursor: pointer;
+  }
+  .weather {
+    width: 400px;
+    height: 300px;
+  }
+}
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.logo {
+  width: 50px;
+  display: block;
+  margin-left: 2rem;
+}
+
+ul {
+  background-image: linear-gradient(135deg, #c50101 10%, #ffae00 100%);
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 730px) {
+  .burger {
+    display: block;
+    position: relative;
+    right: 40px;
+    display: flex;
+    align-items: center;
+    width: 30px;
+  }
+  .input_field {
+    position: relative;
+    top: 50px;
+  }
+  .weather {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 260px;
+    height: 250px;
+    background-color: #000000;
+    border-radius: 10px;
+    color: #ffffff;
+  }
+  .degree {
+    font-size: 2rem;
+  }
+  .location {
+    position: absolute;
+    top: 80px;
+    right: 4px;
+    height: 60px;
+    width: 150px;
+  }
+  .location h1 {
+    display: inline-block;
+  }
+  .location h2 {
+    display: inline-block;
+  }
+  .location h3 {
+    display: inline-block;
+  }
+  .weather_temp {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+  }
+  .weather_temp h1 {
+    display: inline-block;
+    font-size: 3.5rem;
+    margin-right: 1rem;
+  }
+  .weather_temp h3 {
+    display: inline-block;
+  }
+  .temp {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 8px;
+    padding: 0 3rem;
+    text-align: center;
+  }
+  .temp h1 {
+    display: inline-block;
+  }
+  .temp h3 {
+    display: inline-block;
+  }
+  .live_weather {
+    width: 100%;
+  }
+  .weather_icon {
+    display: flex;
+    flex-direction: column;
+    width: 90px;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .weather_icon img {
+    width: 80px;
+  }
+  .second_child {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 70px;
+  }
+  .astronomy {
+    width: 250px;
+    position: relative;
+  }
+  .live_astronomy {
+    width: 100%;
+  }
+  .live_astronomy h1 {
+    color: #000000;
+    display: inline-block;
+  }
+  .live_astronomy h3 {
+    font-size: 2rem;
+    display: inline-block;
+  }
+  .live_astronomy h2 {
+    color: #f7f7f7;
+    display: inline-block;
+  }
+  .live_astronomy div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+    align-items: center;
+  }
+  .forecast {
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding: 0 2rem;
+  }
+
+  .forecast {
+    color: #f7f7f7;
+    text-decoration: underline;
+  }
+  .forecast_details {
+    width: 7rem;
+  }
+
+  .forecast_details:hover {
+    transform: translateY(2px);
+    cursor: pointer;
+  }
+  .forecast_details:active {
+    transform: translateY(2px);
+  }
+  .burger img {
+    width: 100%;
+  }
+  body {
+    overflow: hidden;
+  }
+  .nav_items {
+    position: absolute;
+    right: 0;
+    top: 11vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 120px;
+    color: #ffffff;
+    height: 88vh;
+    transform: translate(100%);
+    transition: transform 0.5s ease-in;
+    padding: 5rem 0;
+    z-index: 1;
+  }
+  .nav_items li {
+    list-style: none;
+    font-size: 1.6rem;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+  }
+  .nav_items li:hover {
+    cursor: pointer;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(255, 255, 255);
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(128, 128, 128, 0.468);
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #929292;
+  }
+}
+.nav_active {
+  transform: translate(0%);
+  filter: drop-shadow(0 2rem 15rem rgb(255, 3, 146));
+}
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translate(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.rotate {
+  animation: rotation 0.5s;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.zoom {
+  animation: zoom-in-zoom-out 2s linear infinite;
+}
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.flex {
+  display: flex;
+}
+.activated {
+  color: rgb(255, 255, 255);
+  border-bottom: 2px solid rgb(249, 249, 249);
+}
+
+.burger {
+  width: 5rem;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 100%;
+}
+
+input::placeholder {
+  text-align: center;
+}
+input {
+  width: 12rem;
+  border-radius: 5px;
+
+  height: 3rem;
+}
+button {
+  border-radius: 5px;
+  width: 5rem;
+  background-color: rgb(255, 102, 0);
+  color: white;
+  height: 3rem;
+}
+button:active {
+  transform: translateY(2px);
+}
+.input_field {
+  font-size: 2rem;
+}

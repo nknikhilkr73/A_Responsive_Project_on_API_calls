@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+
+    <link rel="stylesheet" href="weather.css" />
+
+    <script defer src="weather.js"></script>
+
+    <title>Asynchronous JavaScript</title>
+  </head>
+  <body>
+    <nav>
+      <img class="logo zoom" src="logo.png" alt="logo" />
+
+      <div class="burger">
+        <img class="changable" src="icon-hamburger.svg" alt="burger" />
+      </div>
+      <ul class="nav_items">
+        <li><a href="index.html"> Home </a></li>
+        <li><a href="weather.html">Weather </a></li>
+        <li></li>
+      </ul>
+    </nav>
+    <div class="input_field">
+      <input
+        type="text"
+        name="City_name"
+        placeholder="Place"
+        class="city_name"
+        autocomplete="off"
+      />
+      <button type="submit" class="submit">Search</button>
+      <button class="live">Live</button>
+    </div>
+    <main class="weather"></main>
+    <div class="second_child">
+      <div class="astronomy"></div>
+      <div class="forecast">
+        <div>
+          <button class="forecast_details">Today</button>
+        </div>
+        <div>
+          <button class="forecast_details">Tomorrow</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+
+    <link rel="stylesheet" href="public/css/style.css" />
+
+    <script defer src="script.js"></script>
+
+    <title>Asynchronous JavaScript</title>
+  </head>
+  <body>
+    <nav>
+      <img class="logo zoom" src="logo.png" alt="logo" />
+
+      <div class="burger">
+        <img class="changable" src="icon-hamburger.svg" alt="burger" />
+      </div>
+      <ul class="nav_items">
+        <li><a href="index.html"> Home </a></li>
+        <li><a href="weather.html"> Weather </a></li>
+        <li></li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <div id="map" class="hide"></div>
+      <div class="location_details hide"></div>
+      <span class="hide cross rotate" style="color: red; font-size: 3rem"
+        >&cross;</span
+      >
+
+      <div class="buttons">
+        <button class="live_button">Live</button>
+
+        <button class="country_details">Country Details</button>
+      </div>
+      <div class="countries hide"></div>
+      <div class="details hide">
+        <div class="details_child">
+          <input
+            type="text"
+            name="Country"
+            placeholder="Country name"
+            class="inputt"
+            autocomplete="off"
+          />
+          <button class="btn-country">Details</button>
+        </div>
+      </div>
+      <div class="closing_button hide">
+        <button class="closing">close</button>
+      </div>
+    </main>
+  </body>
+</html>
