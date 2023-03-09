@@ -242,7 +242,7 @@ ul {
     align-items: center;
     background-repeat: no-repeat;
     flex-direction: column;
-    background-size: auto;
+    background-size: cover;
   }
   .burger {
     display: block;
