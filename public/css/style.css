@@ -21,7 +21,7 @@ body {
 
   color: #555;
   background-color: #f7f7f7;
-  min-height: 100vh;
+
   display: flex;
   align-items: center;
   background-repeat: no-repeat;
@@ -323,8 +323,14 @@ input::placeholder {
     width: 100%;
   }
   body {
-    overflow: hidden;
-    height: 1000px;
+    overflow-x: hidden;
+    height: 2000px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    background-size: auto;
   }
   .nav_items {
     position: absolute;
