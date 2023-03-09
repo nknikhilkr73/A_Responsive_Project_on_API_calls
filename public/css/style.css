@@ -7,7 +7,8 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
-  overflow-x: hidden;
+
+  height: 1000px;
 }
 a {
   text-decoration: none;
@@ -20,7 +21,7 @@ body {
 
   color: #555;
   background-color: #f7f7f7;
-  min-height: 100vh;
+
   display: flex;
   align-items: center;
   background-repeat: no-repeat;
@@ -323,6 +324,13 @@ input::placeholder {
   }
   body {
     overflow-x: hidden;
+
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    background-size: cover;
   }
   .nav_items {
     position: absolute;

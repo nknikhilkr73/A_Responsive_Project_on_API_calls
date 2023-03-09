@@ -7,6 +7,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  height: 1000px;
 }
 a {
   text-decoration: none;
@@ -19,7 +20,7 @@ body {
 
   color: #555;
   background-color: #f7f7f7;
-  min-height: 100vh;
+
   display: flex;
   align-items: center;
   background-repeat: no-repeat;
@@ -375,7 +376,14 @@ ul {
     width: 100%;
   }
   body {
-    overflow: hidden;
+    overflow-x: hidden;
+    height: 800px;
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    background-size: cover;
   }
   .nav_items {
     position: absolute;
