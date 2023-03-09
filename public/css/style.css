@@ -7,6 +7,8 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  overflow: hidden;
+  height: 1000px;
 }
 a {
   text-decoration: none;
@@ -321,7 +323,7 @@ input::placeholder {
     width: 100%;
   }
   body {
-    overflow-x: hidden;
+    overflow: hidden;
     height: 1000px;
   }
   .nav_items {
