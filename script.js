@@ -16,9 +16,6 @@ const navLinks = document.querySelectorAll('.navbar-nav li');
 const closing = document.querySelector('.closing_button');
 ////////////////////////////////////////////////////////
 
-if (window.innerWidth < 990) {
-  navLinks[1].classList.add('activated');
-}
 let prv = 0;
 
 let count = 0;

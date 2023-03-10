@@ -293,7 +293,7 @@ input::placeholder {
 }
 .location_details {
   position: absolute;
-  bottom: 3rem;
+  bottom: 6rem;
   width: 100%;
   text-align: left;
 }

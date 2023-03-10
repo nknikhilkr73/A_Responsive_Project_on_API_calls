@@ -12,9 +12,6 @@ const weather = document.querySelector('.weather');
 const container = document.querySelector('.container');
 const liveAstronomy = document.querySelector('.astronomy');
 
-if (window.innerWidth < 990) {
-  navLinks[1].classList.add('activated');
-}
 let count = 0;
 
 let value = 0;
