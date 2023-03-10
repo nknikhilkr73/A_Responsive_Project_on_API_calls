@@ -328,7 +328,7 @@ input::placeholder {
   }
   body {
     overflow-x: hidden;
-    height: 900px;
+    height: 100vh;
     overflow-y: auto;
   }
   .nav_items {
@@ -337,9 +337,9 @@ input::placeholder {
     top: 11vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 120px;
+    width: 33%;
     color: #ffffff;
     height: 88vh;
     transform: translate(100%);
@@ -368,10 +368,10 @@ input::placeholder {
     margin-top: 2rem;
   }
   .lction {
-    font-size: 2rem;
+    font-size: 2.5rem;
     width: 100%;
     margin: 2rem 0;
-    color: rgb(235, 8, 61);
+    color: rgb(255, 255, 255);
   }
   .countries {
     /* margin-bottom: 8rem; */

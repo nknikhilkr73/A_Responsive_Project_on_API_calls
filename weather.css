@@ -382,7 +382,7 @@ ul {
   }
   body {
     overflow-x: hidden;
-    height: 900px;
+    height: 100vh;
     overflow-y: auto;
   }
   .nav_items {
@@ -391,9 +391,9 @@ ul {
     top: 11vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 120px;
+    width: 33%;
     color: #ffffff;
     height: 88vh;
     transform: translate(100%);
