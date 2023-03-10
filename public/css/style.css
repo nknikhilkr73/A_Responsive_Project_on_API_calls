@@ -29,8 +29,9 @@ body {
   flex-direction: column;
   object-fit: cover;
 }
-.nav_items li:hover {
-  border-bottom: 2px solid rgb(0, 225, 255);
+.navbar-nav {
+  text-align: center;
+  font-size: 2rem;
 }
 
 @media (min-width: 730.1px) {
@@ -109,10 +110,6 @@ nav {
   width: 50px;
   display: block;
   margin-left: 2rem;
-}
-
-ul {
-  background-image: linear-gradient(135deg, #c50101 10%, #ffae00 100%);
 }
 
 #map {
@@ -328,36 +325,10 @@ input::placeholder {
   }
   body {
     overflow-x: hidden;
-    height: 100vh;
+    height: 900px;
     overflow-y: auto;
   }
-  .nav_items {
-    position: absolute;
-    right: 0;
-    top: 11vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 33%;
-    color: #ffffff;
-    height: 88vh;
-    transform: translate(100%);
-    transition: transform 0.5s ease-in;
-    padding: 5rem 0;
-    z-index: 1;
-  }
-  .nav_items li {
-    list-style: none;
-    font-size: 1.6rem;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    opacity: 0;
-  }
-  .nav_items li:hover {
-    cursor: pointer;
-  }
+
   .container {
     display: flex;
     flex-flow: column;
@@ -368,7 +339,8 @@ input::placeholder {
     margin-top: 2rem;
   }
   .lction {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    padding-left: 2rem;
     width: 100%;
     margin: 2rem 0;
     color: rgb(255, 255, 255);

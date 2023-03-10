@@ -1,8 +1,7 @@
 ('use strict');
 
-const burger = document.querySelector('.burger img');
 const nav = document.querySelector('.nav_items');
-const navLinks = document.querySelectorAll('.nav_items li');
+const navLinks = document.querySelectorAll('.navbar-nav li');
 const cityInputDetails = document.querySelector('.city_name');
 const Search = document.querySelector('.submit');
 const live = document.querySelector('.live');
@@ -14,26 +13,6 @@ const container = document.querySelector('.container');
 const liveAstronomy = document.querySelector('.astronomy');
 navLinks[1].classList.add('activated');
 let count = 0;
-burger.addEventListener('click', function () {
-  nav.classList.toggle('nav_active');
-  navLinks.forEach((links, index) => {
-    if (links.style.animation) {
-      links.style.animation = '';
-    } else {
-      links.style.animation = `navLinkFade 0.5s ease forwards ${
-        index / 7 + 0.5
-      }s`;
-    }
-  });
-  burger.classList.toggle('rotate');
-  if (count === 0) {
-    burger.setAttribute('src', 'icon-close.svg');
-    count = 1;
-  } else {
-    burger.setAttribute('src', 'icon-hamburger.svg');
-    count = 0;
-  }
-});
 
 let value = 0;
 

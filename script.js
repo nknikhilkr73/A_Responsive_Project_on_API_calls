@@ -12,43 +12,34 @@ const locationDetails = document.querySelector('.location_details');
 const CountryDetails = document.querySelector('.details');
 const burger = document.querySelector('.burger img');
 const nav = document.querySelector('.nav_items');
-const navLinks = document.querySelectorAll('.nav_items li');
+const navLinks = document.querySelectorAll('.navbar-nav li');
 const closing = document.querySelector('.closing_button');
 ////////////////////////////////////////////////////////
 
-navLinks[0].classList.add('activated');
+navLinks[1].classList.add('activated');
 let prv = 0;
-for (let i = 0; i < 3; i++) {
-  navLinks[i].addEventListener('click', function () {
-    if (prv != i) {
-      navLinks[prv].classList.remove('activated');
-      navLinks[i].classList.add('activated');
-      prv = i;
-    }
-  });
-}
 
 let count = 0;
-burger.addEventListener('click', function () {
-  nav.classList.toggle('nav_active');
-  navLinks.forEach((links, index) => {
-    if (links.style.animation) {
-      links.style.animation = '';
-    } else {
-      links.style.animation = `navLinkFade 0.5s ease forwards ${
-        index / 7 + 0.5
-      }s`;
-    }
-  });
-  burger.classList.toggle('rotate');
-  if (count === 0) {
-    burger.setAttribute('src', 'icon-close.svg');
-    count = 1;
-  } else {
-    burger.setAttribute('src', 'icon-hamburger.svg');
-    count = 0;
-  }
-});
+// burger.addEventListener('click', function () {
+//   nav.classList.toggle('nav_active');
+//   navLinks.forEach((links, index) => {
+//     if (links.style.animation) {
+//       links.style.animation = '';
+//     } else {
+//       links.style.animation = `navLinkFade 0.5s ease forwards ${
+//         index / 7 + 0.5
+//       }s`;
+//     }
+//   });
+//   burger.classList.toggle('rotate');
+//   if (count === 0) {
+//     burger.setAttribute('src', 'icon-close.svg');
+//     count = 1;
+//   } else {
+//     burger.setAttribute('src', 'icon-hamburger.svg');
+//     count = 0;
+//   }
+// });
 
 ////////////////////////////////////////////////////
 const renderCountry = function (data, className = '') {

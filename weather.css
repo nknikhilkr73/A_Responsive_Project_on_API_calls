@@ -29,6 +29,10 @@ body {
   flex-direction: column;
   object-fit: cover;
 }
+.navbar-nav {
+  text-align: center;
+  font-size: 2rem;
+}
 .nav_items li:hover {
   border-bottom: 2px solid rgb(0, 225, 255);
 }
@@ -226,10 +230,6 @@ nav {
   margin-left: 2rem;
 }
 
-ul {
-  background-image: linear-gradient(135deg, #c50101 10%, #ffae00 100%);
-}
-
 .hide {
   display: none;
 }
@@ -250,14 +250,15 @@ ul {
     position: relative;
     top: 50px;
   }
+
   .weather {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
     position: relative;
     display: flex;
     flex-direction: row;
-    width: 260px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     background-color: #000000;
     border-radius: 10px;
     color: #ffffff;
@@ -327,7 +328,7 @@ ul {
     display: flex;
     flex-direction: column;
     position: relative;
-    bottom: 70px;
+    bottom: 40px;
   }
   .astronomy {
     width: 250px;
@@ -382,35 +383,8 @@ ul {
   }
   body {
     overflow-x: hidden;
-    height: 100vh;
+    height: 900px;
     overflow-y: auto;
-  }
-  .nav_items {
-    position: absolute;
-    right: 0;
-    top: 11vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 33%;
-    color: #ffffff;
-    height: 88vh;
-    transform: translate(100%);
-    transition: transform 0.5s ease-in;
-    padding: 5rem 0;
-    z-index: 1;
-  }
-  .nav_items li {
-    list-style: none;
-    font-size: 1.6rem;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    opacity: 0;
-  }
-  .nav_items li:hover {
-    cursor: pointer;
   }
 
   ::-webkit-scrollbar {
@@ -494,16 +468,31 @@ input {
 
   height: 3rem;
 }
-button {
+.submit {
   border-radius: 5px;
-  width: 5rem;
+  width: 8rem;
   background-color: rgb(255, 102, 0);
   color: white;
-  height: 3rem;
+  height: 3.3rem;
 }
+.live {
+  border-radius: 5px;
+  width: 6rem;
+  background-color: rgb(255, 102, 0);
+  color: white;
+  height: 3.3rem;
+}
+
 button:active {
   transform: translateY(2px);
 }
 .input_field {
   font-size: 2rem;
+}
+.forecast_details {
+  border-radius: 5px;
+  font-size: 1.5rem;
+  background-color: rgb(255, 102, 0);
+  color: white;
+  height: 3.3rem;
 }
