@@ -11,9 +11,7 @@ const forecast = document.querySelectorAll('.forecast div');
 const weather = document.querySelector('.weather');
 const container = document.querySelector('.container');
 const liveAstronomy = document.querySelector('.astronomy');
-window.onresize = function () {
-  location.reload();
-};
+
 if (window.innerWidth < 990) {
   navLinks[1].classList.add('activated');
 }
