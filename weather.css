@@ -18,8 +18,8 @@ body {
   font-family: system-ui;
   background: linear-gradient(
     132deg,
-    rgb(242, 70, 70) 0%,
-    rgb(255, 196, 108) 100%
+    rgb(255, 122, 122) 0%,
+    rgb(247, 160, 30) 100%
   );
   color: #555;
 
@@ -41,10 +41,18 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+@media (min-width: 990px) {
+  .navbar-collapse {
+    padding-right: 4rem;
+  }
+  .nav-item {
+    margin: 0 4rem;
+  }
+}
 
 @media (min-width: 730.1px) {
   body {
-    height: 100vh;
+    height: 900px;
   }
   .burger {
     display: none;
@@ -248,7 +256,7 @@ nav {
   }
   .input_field {
     position: relative;
-    top: 50px;
+    top: 30px;
   }
 
   .weather {
@@ -471,14 +479,14 @@ input {
 .submit {
   border-radius: 5px;
   width: 8rem;
-  background-color: rgb(255, 102, 0);
+  background-color: rgb(217, 40, 40);
   color: white;
   height: 3.3rem;
 }
 .live {
   border-radius: 5px;
   width: 6rem;
-  background-color: rgb(255, 102, 0);
+  background-color: rgb(217, 40, 40);
   color: white;
   height: 3.3rem;
 }
@@ -491,8 +499,9 @@ button:active {
 }
 .forecast_details {
   border-radius: 5px;
+  width: 9rem;
   font-size: 1.5rem;
-  background-color: rgb(255, 102, 0);
+  background-color: rgb(245, 32, 32);
   color: white;
   height: 3.3rem;
 }

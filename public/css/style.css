@@ -18,8 +18,8 @@ body {
   font-family: system-ui;
   background: linear-gradient(
     132deg,
-    rgb(242, 70, 70) 0%,
-    rgb(255, 196, 108) 100%
+    rgb(255, 122, 122) 0%,
+    rgb(247, 160, 30) 100%
   );
   color: #555;
 
@@ -33,7 +33,14 @@ body {
   text-align: center;
   font-size: 2rem;
 }
-
+@media (min-width: 990px) {
+  .navbar-collapse {
+    padding-right: 4rem;
+  }
+  .nav-item {
+    margin: 0 4rem;
+  }
+}
 @media (min-width: 730.1px) {
   body {
     height: 100vh;
@@ -71,9 +78,10 @@ body {
   }
   .lction {
     font-size: 2.5rem;
+    padding-left: 2rem;
     width: 350px;
     margin: 2rem 0;
-    color: rgb(235, 8, 61);
+    color: rgb(255, 255, 255);
   }
   .countries {
     /* margin-bottom: 8rem; */
